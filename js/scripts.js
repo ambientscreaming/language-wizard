@@ -37,3 +37,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     }
 })
+
+function refreshPage() {
+    window.location.reload();
+} 

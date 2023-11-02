@@ -5,3 +5,20 @@
 body {
     text-align: center;
 }
+
+.intro {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.question1 {
+    /* border-style: solid;
+    border-color: darkmagenta; */
+    padding-top: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.button {
+    padding-top: 50px;
+}

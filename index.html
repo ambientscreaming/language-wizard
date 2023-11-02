@@ -9,12 +9,13 @@
 
 <body>
     <h1>Language Wizard</h1>
-    <p>welcome mortal. i see you’ve come to me, the great Language Wizard, to find out what language you should study!
+    <p class="intro">welcome mortal. i see you’ve come to me, the great Language Wizard, to find out what language you
+        should study!
         luckily for you, i have the answers you seek! i will, however, need some information from you as tribute. answer
         me these questions… five.</p>
 
     <form id="formDemo">
-        <p>you wake up in a dark room. you get up, feeling blindly along the wall until you find a
+        <p class="question1">you wake up in a dark room. you get up, feeling blindly along the wall until you find a
             lightswitch. the light
             allows you to see the room is completely empty, except for these three items. you're inexplicably drawn to
             one
@@ -25,7 +26,6 @@
             <option>paintbrush</option>
             <option>single rose</option>
         </select>
-        <br>
         <p>you're craving an omelet, but you're out of eggs. you're not deterred. look in your fridge and
             pick something to
             substitute:</p>
@@ -35,13 +35,14 @@
             <option>mashed potatoes</option>
             <option>chowder</option>
         </select>
-        <br>
-        <button type="submit">whoosh</button>
-        <br>
+        <div class="button">
+            <button type="submit">whoosh</button>
+        </div>
         <p id="langOutput" class="hidden"> mecka lecka hi mecka hiney ho! you should learn:
             <span id="langResult" type="text" size="20">
         </p>
     </form>
+    <button type="button" onClick="refreshPage()">try again!</button>
 
 </body>
 
