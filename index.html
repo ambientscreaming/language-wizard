@@ -9,28 +9,37 @@
 
 <body>
     <h1>Language Wizard</h1>
+    <p>welcome mortal. i see you’ve come to me, the great Language Wizard, to find out what language you should study!
+        luckily for you, i have the answers you seek! i will, however, need some information from you as tribute. answer
+        me these questions… five.</p>
 
     <form id="formDemo">
-        your fav color
-        <select id="colorList" onchange="colorOptions()">
-            <option> ---colorz--- </option>
-            <option> pink </option>
-            <option> blue </option>
-            <option> green </option>
+        <p>you wake up in a dark room. you get up, feeling blindly along the wall until you find a
+            lightswitch. the light
+            allows you to see the room is completely empty, except for these three items. you're inexplicably drawn to
+            one
+            of them; which one is it?</p>
+        <select id="roomList" onchange="roomOptions()">
+            <option id=>alone, weird room, pick thing: </option>
+            <option>jackhammer</option>
+            <option>paintbrush</option>
+            <option>single rose</option>
         </select>
         <br>
-        your fav animal
-        <select id="animalList" onchange="animalOptions()">
-            <option> ---animalz--- </option>
-            <option>cat</option>
-            <option>dog</option>
-            <option>bird</option>
+        <p>you're craving an omelet, but you're out of eggs. you're not deterred. look in your fridge and
+            pick something to
+            substitute:</p>
+        <select id="foodList" onchange="foodOptions()">
+            <option>hungry, no egg, pick food:</option>
+            <option>pancake batter</option>
+            <option>mashed potatoes</option>
+            <option>chowder</option>
         </select>
         <br>
         <button type="submit">whoosh</button>
         <br>
-        <p id="colorOutput" class="hidden"> a color is:
-            <span id="color" type="text" size="20">
+        <p id="langOutput" class="hidden"> mecka lecka hi mecka hiney ho! you should learn:
+            <span id="langResult" type="text" size="20">
         </p>
     </form>
 
