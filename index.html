@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>language wizard!</title>
+</head>
+
+<body>
+    <h1>Language Wizard</h1>
+
+    <form id="formDemo">
+        your fav color
+        <select id="colorList" onchange="colorOptions()">
+            <option> ---colorz--- </option>
+            <option> pink </option>
+            <option> blue </option>
+            <option> green </option>
+        </select>
+        <br>
+        your fav animal
+        <select id="animalList" onchange="animalOptions()">
+            <option> ---animalz--- </option>
+            <option>cat</option>
+            <option>dog</option>
+            <option>bird</option>
+        </select>
+        <br>
+        <button type="submit">whoosh</button>
+        <br>
+        <p id="colorOutput" class="hidden"> a color is:
+            <span id="color" type="text" size="20">
+        </p>
+    </form>
+
+</body>
+
+</html>
