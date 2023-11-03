@@ -4,41 +4,48 @@
 <head>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
-    <title>language wizard!</title>
+    <title>choices choices!</title>
 </head>
 
 <body>
-    <h1>Language Wizard</h1>
-    <p class="intro">welcome mortal. i see you’ve come to me, the great Language Wizard, to find out what language you
-        should study!
-        luckily for you, i have the answers you seek! i will, however, need some information from you as tribute. answer
-        me these questions… five.</p>
+    <h1>Magic L8nguage Ball</h1>
+    <p class="intro"></p>
 
-    <form id="formDemo">
-        <p class="question1">you wake up in a dark room. you get up, feeling blindly along the wall until you find a
-            lightswitch. the light
-            allows you to see the room is completely empty, except for these three items. you're inexplicably drawn to
-            one
-            of them; which one is it?</p>
-        <select id="roomList" onchange="roomOptions()">
-            <option id=>alone, weird room, pick thing: </option>
-            <option>jackhammer</option>
-            <option>paintbrush</option>
-            <option>single rose</option>
+    <form id="formDemo" class="formDemo">
+        <p>shake that ball!</p>
+        <select id="firstDropDown" onchange="firstDropDownOptions()">
+            <option id=>--pick--</option>
+            <option>shake hard</option>
+            <option>shake soft</option>
         </select>
-        <p>you're craving an omelet, but you're out of eggs. you're not deterred. look in your fridge and
-            pick something to
-            substitute:</p>
-        <select id="foodList" onchange="foodOptions()">
-            <option>hungry, no egg, pick food:</option>
-            <option>pancake batter</option>
-            <option>mashed potatoes</option>
-            <option>chowder</option>
+        <p>keep shaking!</p>
+        <select id="secondDropDown" onchange="secondDropDownOptions()">
+            <option>--pick--</option>
+            <option>shake right</option>
+            <option>shake left</option>
+        </select>
+        <p>shake shake shake!</p>
+        <select id="thirdDropDown" onchange="thirdDropDownOptions()">
+            <option>--pick--</option>
+            <option>shake up</option>
+            <option>shake down</option>
+        </select>
+        <p>shake it!</p>
+        <select id="fourthDropDown" onchange="fourthDropDownOptions()">
+            <option>--pick--</option>
+            <option>shake around</option>
+            <option>i'm tired!</option>
+        </select>
+        <p>now give it a kiss for good luck!</p>
+        <select id="fifthDropDown" onchange="fifthDropDownOptions()">
+            <option>--pick--</option>
+            <option>*kiss*</option>
+            <option>no!</option>
         </select>
         <div class="button">
             <button type="submit">whoosh</button>
         </div>
-        <p id="langOutput" class="hidden"> mecka lecka hi mecka hiney ho! you should learn:
+        <p id="langOutput" class="hidden"> great job, bestie! you should totally learn:
             <span id="langResult" type="text" size="20">
         </p>
     </form>

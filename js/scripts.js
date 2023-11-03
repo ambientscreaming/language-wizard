@@ -2,10 +2,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const formDemo = document.getElementById("formDemo");
     formDemo.addEventListener("submit", (e) => {
 
-        const roomList = document.getElementById("roomList").value;
-        const foodList = document.getElementById("foodList").value;
+        const dropDown1 = document.getElementById("firstDropDown").value;
+        const dropDown2 = document.getElementById("secondDropDown").value;
+        const dropDown3 = document.getElementById("thirdDropDown").value;
+        const dropDown4 = document.getElementById("fourthDropDown").value;
+        const dropDown5 = document.getElementById("fifthDropDown").value;
 
-        const chosenLanguage = languageFromInputs(roomList, foodList);
+        const chosenLanguage = languageFromInputs(firstDropDown, secondDropDown, thirdDropDown, fourthDropDown, fifthDropDown);
 
 
         document.getElementById('langResult').innerText = chosenLanguage;
@@ -14,25 +17,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
         e.preventDefault();
 
     })
-    function languageFromInputs(roomValue, foodValue) {
-        if (roomValue === "jackhammer" && foodValue === "mashed potatoes") {
+    function languageFromInputs(firstDropDown, secondDropDown, thirdDropDown, fourthDropDown, fifthDropDown) {
+        if (firstDropDown === "shake hard" && secondDropDown === "shake right" && thirdDropDown === "shake down" && fourthDropDown === "i'm tired!" && fifthDropDown === "*kiss*") {
             return "ruby";
-        } else if (roomValue === "jackhammer" && foodValue === "chowder") {
+        } else if (firstDropDown === "shake soft" && secondDropDown === "shake left" && thirdDropDown === "shake up" && fourthDropDown === "shake around" && fifthDropDown === "no!") {
             return "javascript";
-        } else if (roomValue === "jackhammer" && foodValue === "pancake batter") {
-            return "c#";
-        } else if (roomValue === "paintbrush" && foodValue === "mashed potatoes") {
-            return "ruby";
-        } else if (roomValue === "paintbrush" && foodValue === "chowder") {
-            return "javascript";
-        } else if (roomValue === "paintbrush" && foodValue === "pancake batter") {
-            return "c#";
-        } else if (roomValue === "single rose" && foodValue === "mashed potatoes") {
-            return "ruby";
-        } else if (roomValue === "single rose" && foodValue === "chowder") {
-            return "c#";
         } else {
-            return "javascript";
+            return "python"
         }
 
     }

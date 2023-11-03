@@ -1,19 +1,30 @@
+@font-face {
+    font-family: 'Magic-Dreams';
+    src: url(../fonts/Magic-Dreams.ttf) format("truetype");
+}
+
 .hidden {
     display: none;
 }
 
 body {
     text-align: center;
+    background-color: rgb(62, 55, 189);
+}
+
+h1 {
+    font-family: Magic-Dreams;
+    font-size: 80px;
+    color: floralwhite
 }
 
 .intro {
     padding-left: 200px;
     padding-right: 200px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .question1 {
-    /* border-style: solid;
-    border-color: darkmagenta; */
     padding-top: 25px;
     padding-left: 200px;
     padding-right: 200px;
@@ -21,4 +32,9 @@ body {
 
 .button {
     padding-top: 50px;
+}
+
+.formDemo {
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
