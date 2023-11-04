@@ -14,21 +14,23 @@ document.addEventListener("DOMContentLoaded", (e) => {
         document.getElementById('langResult').innerText = chosenLanguage;
         document.querySelector("p#langOutput").removeAttribute("class")
 
+        document.getElementById("formDemo").reset();
+
         e.preventDefault();
 
     })
     function languageFromInputs(firstDropDown, secondDropDown, thirdDropDown, fourthDropDown, fifthDropDown) {
-        if (firstDropDown === "shake hard") {
+        if (firstDropDown === "shake hard" && thirdDropDown === "shake up") {
             return "ruby";
-        } else if (secondDropDown === "shake left") {
+        } else if (secondDropDown === "shake left" && fourthDropDown === "shake around") {
             return "javascript";
+        } else if (fifthDropDown === "*kiss*" && firstDropDown === "shake soft") {
+            return "c#";
+        } else if (secondDropDown === "shake right" && fourthDropDown === "i'm tired!") {
+            return "rust";
         } else {
             return "python"
         }
 
     }
 })
-
-function refreshPage() {
-    window.location.reload();
-} 
