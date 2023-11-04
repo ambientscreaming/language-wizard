@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         const dropDown4 = document.getElementById("fourthDropDown").value;
         const dropDown5 = document.getElementById("fifthDropDown").value;
 
-        const chosenLanguage = languageFromInputs(firstDropDown, secondDropDown, thirdDropDown, fourthDropDown, fifthDropDown);
+        const chosenLanguage = languageFromInputs(dropDown1, dropDown2, dropDown3, dropDown4, dropDown5);
 
 
         document.getElementById('langResult').innerText = chosenLanguage;
@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     })
     function languageFromInputs(firstDropDown, secondDropDown, thirdDropDown, fourthDropDown, fifthDropDown) {
-        if (firstDropDown === "shake hard" && secondDropDown === "shake right" && thirdDropDown === "shake down" && fourthDropDown === "i'm tired!" && fifthDropDown === "*kiss*") {
+        if (firstDropDown === "shake hard") {
             return "ruby";
-        } else if (firstDropDown === "shake soft" && secondDropDown === "shake left" && thirdDropDown === "shake up" && fourthDropDown === "shake around" && fifthDropDown === "no!") {
+        } else if (secondDropDown === "shake left") {
             return "javascript";
         } else {
             return "python"
