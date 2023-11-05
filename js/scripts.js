@@ -21,15 +21,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
     })
     function languageFromInputs(firstDropDown, secondDropDown, thirdDropDown, fourthDropDown, fifthDropDown) {
         if (firstDropDown === "shake hard" && thirdDropDown === "shake up") {
-            return "ruby";
+            return "ruby!";
         } else if (secondDropDown === "shake left" && fourthDropDown === "shake around") {
-            return "javascript";
+            return "javascript!";
         } else if (fifthDropDown === "*kiss*" && firstDropDown === "shake soft") {
-            return "c#";
+            return "c#!";
         } else if (secondDropDown === "shake right" && fourthDropDown === "i'm tired!") {
-            return "rust";
+            return "rust!";
         } else {
-            return "python"
+            return "python!"
         }
 
     }
