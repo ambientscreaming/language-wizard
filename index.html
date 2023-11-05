@@ -2,8 +2,8 @@
 <html lang="en-US">
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
     <title>choices choices!</title>
@@ -18,36 +18,46 @@
 
 
     <form id="formDemo" class="formDemo">
-        <p>shake that ball!</p>
-        <select id="firstDropDown" onchange="firstDropDownOptions()">
-            <option id=>--pick--</option>
-            <option>shake hard</option>
-            <option>shake soft</option>
-        </select>
-        <p>keep shaking!</p>
-        <select id="secondDropDown" onchange="secondDropDownOptions()">
-            <option>--pick--</option>
-            <option>shake right</option>
-            <option>shake left</option>
-        </select>
-        <p>shake shake shake!</p>
-        <select id="thirdDropDown" onchange="thirdDropDownOptions()">
-            <option>--pick--</option>
-            <option>shake up</option>
-            <option>shake down</option>
-        </select>
-        <p>shake it!</p>
-        <select id="fourthDropDown" onchange="fourthDropDownOptions()">
-            <option>--pick--</option>
-            <option>shake around</option>
-            <option>i'm tired!</option>
-        </select>
-        <p>now give it a kiss for good luck!</p>
-        <select id="fifthDropDown" onchange="fifthDropDownOptions()">
-            <option>--pick--</option>
-            <option>*kiss*</option>
-            <option>no!</option>
-        </select>
+        <div class="selectGroup">
+            <div>shake that ball!</div>
+            <select id="firstDropDown" class="form-select form-select-lg">
+                <option id=>--pick--</option>
+                <option>shake hard</option>
+                <option>shake soft</option>
+            </select>
+        </div>
+        <div class="selectGroup">
+            <div>keep shaking!</div>
+            <select id="secondDropDown" class="form-select form-select-lg">
+                <option>--pick--</option>
+                <option>shake right</option>
+                <option>shake left</option>
+            </select>
+        </div>
+        <div class="selectGroup">
+            <div>shake shake shake!</div>
+            <select id="thirdDropDown" class="form-select form-select-lg">
+                <option>--pick--</option>
+                <option>shake up</option>
+                <option>shake down</option>
+            </select>
+        </div>
+        <div class="selectGroup">
+            <div>shake it!</div>
+            <select id="fourthDropDown" class="form-select form-select-lg">
+                <option>--pick--</option>
+                <option>shake around</option>
+                <option>i'm tired!</option>
+            </select>
+        </div>
+        <div class="selectGroup">
+            <div>now give it a kiss for good luck!</div>
+            <select id="fifthDropDown" class="form-select form-select-lg">
+                <option>--pick--</option>
+                <option>*kiss*</option>
+                <option>no!</option>
+            </select>
+        </div>
         <div class="button">
             <button type="submit">whoosh</button>
         </div>
