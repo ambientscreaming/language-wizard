@@ -2,8 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
     <title>choices choices!</title>
@@ -11,57 +10,61 @@
 
 <body>
     <h1>MAGIC L8NGUAGE BALL</h1>
-    <p class="intro">Shake the Magic L8anguage Ball to determine your lingual fate!</p>
+    <p class="text-body-secondary">Shake the Magic L8nguage Ball to determine your lingual fate!</p>
 
     <img class="magic8Gif"
         src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWtxdnZkaTQ1NGx0azV3cmFsenF5ZXZ6dHp6YjhicnE0MXZhMTc2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3orifhNhn840GpMMPm/giphy.gif">
 
-
     <form id="formDemo" class="formDemo">
-        <div class="selectGroup">
-            <div>shake that ball!</div>
+        <div class="form-group">
+            <label for="firstDropDown" class="form-label mt-4">shake that ball!
+            </label>
             <select id="firstDropDown" class="form-select form-select-lg">
-                <option id=>--pick--</option>
+                <option>--pick--</option>
                 <option>shake hard</option>
                 <option>shake soft</option>
             </select>
         </div>
-        <div class="selectGroup">
-            <div>keep shaking!</div>
+        <div class="form-group">
+            <label for="secondDropdown" class="form-label mt-4">keep shaking!
+            </label>
             <select id="secondDropDown" class="form-select form-select-lg">
                 <option>--pick--</option>
                 <option>shake right</option>
                 <option>shake left</option>
             </select>
         </div>
-        <div class="selectGroup">
-            <div>shake shake shake!</div>
+        <div class="form-group">
+            <label for="thirdDropDown" class="form-label mt-4">don't stop now!
+            </label>
             <select id="thirdDropDown" class="form-select form-select-lg">
                 <option>--pick--</option>
                 <option>shake up</option>
                 <option>shake down</option>
             </select>
         </div>
-        <div class="selectGroup">
-            <div>shake it!</div>
+        <div class="form-group">
+            <label for="fourthDropDown" class="form-label mt-4">keep shaking, almost there!
+            </label>
             <select id="fourthDropDown" class="form-select form-select-lg">
                 <option>--pick--</option>
                 <option>shake around</option>
                 <option>i'm tired!</option>
             </select>
         </div>
-        <div class="selectGroup">
-            <div>now give it a kiss for good luck!</div>
+        <div class="form-group">
+            <label for="fifthDropDown" class="form-label mt-4">now give it a kiss for good luck!
+            </label>
             <select id="fifthDropDown" class="form-select form-select-lg">
                 <option>--pick--</option>
                 <option>*kiss*</option>
-                <option>no!</option>
+                <option>no!!</option>
             </select>
         </div>
         <div class="button">
-            <button type="submit">whoosh</button>
+            <button class="btn btn-lg btn-primary" type="submit">whoosh</button>
         </div>
-        <p id="langOutput" class="hidden"> great job, bestie! you should totally learn:
+        <p id="langOutput" class="hidden"> great job bestie! you should totally learn:
             <span id="langResult" type="text" size="20">
         </p>
     </form>
