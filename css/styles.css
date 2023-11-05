@@ -52,9 +52,14 @@ h1 {
     margin-bottom: 24px;
 }
 
-.accordion {
+.findOutMore {
     float: left;
     padding-left: 200px;
     padding-right: 30px;
-    padding-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+h5 {
+    padding-bottom: 18px;
 }
